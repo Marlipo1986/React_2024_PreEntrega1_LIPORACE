@@ -1,35 +1,45 @@
-import {
-  AppBar,
-  Toolbar,
-  IconButton,
-  Typography,
-  Stack,
-  Button,
-} from "@mui/material";
-import FoodBankIcon from "@mui/icons-material/FoodBank";
-import CartWidget from "../cartWidget/CartWidget";
-
+import "./NavBar.css";
+//import FoodBankIcon from '@mui/icons-material/FoodBank';
+import CartWidget from "../CartWidget/CartWidget";
+import { Link } from "react-router-dom";
+import MenuCompleto from "../../Pages/MenuCompleto";
+import PlatosPrincipales from "../../Pages/PlatosPrincipales";
+import Guarniciones from "../../Pages/Guarniciones";
+import Entradas from "../../Pages/Entradas";
+import Postres from "../../Pages/Postres";
+import Bebidas from "../../Pages/Bebidas";
+import Comanda from "../../Pages/Comanda";
 
 const NavBar = () => {
   return (
-    <AppBar position="static">
-      <Toolbar>
-        <IconButton size="large" edge="start" color="inherit" aria-label="logo">
-          <FoodBankIcon />
-        </IconButton>
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          RESTAURAPP - PreEntrega React - Martin Liporace
-        </Typography>
-        <Stack direction="row" spacing={2}>
-          <Button color="inherit">Inicio</Button>
-          <Button color="inherit">Entradas</Button>
-          <Button color="inherit">Principales</Button>
-          <Button color="inherit">Postres</Button>
-          <CartWidget/>
-        </Stack>
-      </Toolbar>
-      
-    </AppBar>
+    <nav className="Header">
+      <h6>
+        RESTAURAPP - del celu a tu mesa - PreEntrega React - Martin Liporace
+      </h6>
+      <ul className="listaNav">
+        <Link to="/MenuCompleto" element={<MenuCompleto />}>
+          Menu Completo
+        </Link>
+        <Link to="/Entradas" element={<Entradas />}>
+          Entradas
+        </Link>
+        <Link to="/PlatosPrincipales" element={<PlatosPrincipales />}>
+          Platos Principales{" "}
+        </Link>
+        <Link to="/Guarniciones" element={<Guarniciones />}>
+          Guarniciones
+        </Link>
+        <Link to="/Postres" element={<Postres />}>
+          Postres
+        </Link>
+        <Link to="/Bebidas" element={<Bebidas />}>
+          Bebidas
+        </Link>
+        <Link to="/Comanda" element={<Comanda />}>
+          Comanda {<CartWidget />}
+        </Link>
+      </ul>
+    </nav>
   );
 };
 
