@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { getProductById } from "../assets/db.js";
 import ItemCount from "../Components/ItemCount/ItemCount.jsx";
 
-
 const DetallePlato = () => {
   let { id } = useParams();
 
@@ -42,7 +41,7 @@ const DetallePlato = () => {
             <p className="Info Oculto">{id}</p>
             <p className="Info">{product.descripcion}</p>
           </section>
-          <ItemCount stock='100' initial='1' onAdd='{quantity}'/>
+          <ItemCount stock="100" initial="1" onAdd="{quantity}" />
         </article>
       ) : (
         "Product not found"

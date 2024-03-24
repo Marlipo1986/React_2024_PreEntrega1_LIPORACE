@@ -1,12 +1,11 @@
 import ItemListContainer from "../Components/ItemListContainer/ItemListContainer";
 
-
 const MenuCompleto = () => {
   return (
     <div>
-        <ItemListContainer/>
+      <ItemListContainer />
     </div>
-  )
-}
+  );
+};
 
-export default MenuCompleto
+export default MenuCompleto;

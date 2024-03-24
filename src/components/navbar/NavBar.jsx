@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import MenuCompleto from "../../Pages/menuCompleto";
 import PlatosPrincipales from "../../Pages/platosPrincipales";
 import Guarniciones from "../../Pages/guarniciones";
-import Entradas from "../../Pages/Entradas";
+import Entradas from "../../Pages/entradas";
 import Postres from "../../Pages/postres";
 import Bebidas from "../../Pages/bebidas";
 import Comanda from "../../Pages/comanda";
