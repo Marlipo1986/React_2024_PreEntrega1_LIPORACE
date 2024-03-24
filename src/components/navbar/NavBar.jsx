@@ -1,11 +1,10 @@
 import "./NavBar.css";
-//import FoodBankIcon from '@mui/icons-material/FoodBank';
 import CartWidget from "../CartWidget/CartWidget";
 import { Link } from "react-router-dom";
-import menuCompleto from "../../Pages/menuCompleto";
+import MenuCompleto from "../../Pages/menuCompleto";
 import PlatosPrincipales from "../../Pages/platosPrincipales";
 import Guarniciones from "../../Pages/guarniciones";
-import Entradas from "../../Pages/entradas";
+import Entradas from "../../Pages/Entradas";
 import Postres from "../../Pages/postres";
 import Bebidas from "../../Pages/bebidas";
 import Comanda from "../../Pages/comanda";
@@ -17,7 +16,7 @@ const NavBar = () => {
         RESTAURAPP - del celu a tu mesa - PreEntrega React - Martin Liporace
       </h6>
       <ul className="listaNav">
-        <Link to="/MenuCompleto" element={<menuCompleto />}>
+        <Link to="/MenuCompleto" element={<MenuCompleto />}>
           Menu Completo
         </Link>
         <Link to="/Entradas" element={<Entradas />}>

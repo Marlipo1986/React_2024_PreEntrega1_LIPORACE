@@ -1,7 +1,7 @@
 import ItemListContainer from "../Components/ItemListContainer/ItemListContainer";
 
 
-const menuCompleto = () => {
+const MenuCompleto = () => {
   return (
     <div>
         <ItemListContainer/>
@@ -9,4 +9,4 @@ const menuCompleto = () => {
   )
 }
 
-export default menuCompleto
+export default MenuCompleto
