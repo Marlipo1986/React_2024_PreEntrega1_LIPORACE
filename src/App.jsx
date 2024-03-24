@@ -4,15 +4,15 @@ import Navbar from "./Components/Navbar/NavBar";
 //import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 
 //PAGES
-//import Bebidas from "./Pages/Bebidas";
-//import Entradas from "./Pages/Entradas";
-//import PlatosPrincipales from "./Pages/PlatosPrincipales";
-//import Postres from "./Pages/Postres";
-//import Guarniciones from "./Pages/Guarniciones";
-import MenuCompleto from "./Pages/MenuCompleto";
+//import Bebidas from "./Pages/bebidas";
+//import Entradas from "./Pages/entradas";
+//import PlatosPrincipales from "./Pages/platosPrincipales";
+//import Postres from "./Pages/postres";
+//import Guarniciones from "./Pages/guarniciones";
+import MenuCompleto from "./Pages/menuCompleto";
 //import Comanda from "./Pages/Comanda";
-import NotFound from "./Pages/NotFound";
-import DetallePlato from "./Pages/DetallePlato";
+import NotFound from "./Pages/notFound";
+import DetallePlato from "./Pages/detallePlato";
 
 const App = () => {
   return (

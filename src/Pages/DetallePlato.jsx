@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { getProductById } from "../assets/db";
-import ItemCount from "../Components/ItemCount/ItemCount";
+import { getProductById } from "../assets/db.js";
+import ItemCount from "../Components/ItemCount/ItemCount.jsx";
 
 
 const DetallePlato = () => {
